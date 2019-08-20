@@ -2,6 +2,7 @@ body {
     background: url(resources/money_backdrop.jpg);
     font-family: 'Acme', sans-serif;
 }
+
 #main {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -13,65 +14,81 @@ body {
     background: yellow;
     text-align: center;
 }
+
 img {
     width: 200px;
     height: 200px;
 }
+
 #heading, #people, #know-me, #cash {
     font-size: 40px;
     color: red;
     font-weight: 600;
 }
+
 #description {
     grid-area: 1 / 2 / span 1 / span 2;
     font-weight: 600;
 }
+
 #people {
     grid-area: 2 / 1 / span 1 / span 3;
 }
+
 #know-me {
     grid-area: 6 / 1 / span 1 / span 3;
 }
+
 #cash {
     grid-area: 9 / 1 / span 1 / span 3;
     color: green;
 }
+
 #cash + img {
     width: 300px;
     height: 300px;
     padding: 30px;
 }
+
 table {
     width: 500px;
     margin: 50px 100px 100px 550px;
     text-align: left;
 }
+
 td {
     font-size: 20px;
 }
+
 input {
     width: 300px;
 }
+
 button {
     width: 430px;
     height: 30px;
 }
+
 #caution {
     font-size: 16px;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 700px) {
     body {
         background: none;
     }
+
     #main {
         grid-template-columns: auto;
         grid-template-rows: auto; 
         margin: 0px;
     }
+
     #description, #people, #know-me, #cash {
         grid-area: unset;
         overflow: auto;
     }
+    
     table {
         margin: 0px;
     }
